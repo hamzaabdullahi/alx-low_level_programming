@@ -1,0 +1,13 @@
+#include <stdio.h>
+/**
+ * main -main block
+ * Return 0  for succes
+ */
+int main(void)
+{
+	char a;
+	for (a='a';a<='z';a++)
+	putchar(a);
+	putchar('\n');
+	return (0);
+}
