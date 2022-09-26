@@ -3,27 +3,28 @@
 #include<stdio.h>
 /**
  * main - determines if last digit of a random number is lessthan five or zero.
- * Return : 0 on successful run of the program.
+ * Return : 0 on successful run 
  */
 int main(void)
 {
 	int n;
-	char last[] = "Last digit of";
+	int lastn;
 	srand(time(0));
-	n = rand()-RAND_MAX/2;
-	printf("%s %d is %d and is " last, n, n % 10);
-       	if (n % 10 > 5)
+	n = rand() - RAND_MAX / 2;
+	lastn = n % 10;
+	if (lastn > 5)
 	{
-		printf("greater than 5\n");
+		printf("Last digit of %d is %d and is greter than 5\n", n, lastn);
 	}
-	else if (" n % 10 == 0)
+	else if (n == 0)
 	{
-		printf("0\n");
+		printf("Last digit of %d is %d and is 0\n", n, lastn);
 	}
 	else
 	{
-		printf("less than 6 and not 0\n");
+		printf("Last digit of %d is %d and is les than 6 and not 0\n", n, lastn);
 	}
 	return (0);
 }
+
 
